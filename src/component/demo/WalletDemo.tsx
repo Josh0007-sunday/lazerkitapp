@@ -1,12 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLazerkit } from 'lazerkit-webauthn';
 import { Wallet, Copy, Check, ArrowLeft, Lock, Unlock } from 'lucide-react';
-
-interface UserSession {
-  username: string;
-  credentialId: string;
-}
 
 export const WalletDemo: React.FC = () => {
   const navigate = useNavigate();

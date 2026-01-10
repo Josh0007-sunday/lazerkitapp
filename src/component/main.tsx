@@ -1,14 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Fingerprint, Shield, Zap, Code, ArrowRight, Check, Lock, Wallet, Users, Globe, ChevronRight, Rocket, Key, Database } from 'lucide-react';
+import { Fingerprint, Shield, Zap, Code, ArrowRight, Check, Wallet, Globe, ChevronRight, Key, Database } from 'lucide-react';
 import lazerkitLogo from '../assets/lazerkitlogo.png';
 import FingerprintAnimation from './FingerprintAnimation';
 
 const LazerkitLanding = () => {
-  const [scrollY, setScrollY] = useState(0);
-
   useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
+    const handleScroll = () => window.scrollY;
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
