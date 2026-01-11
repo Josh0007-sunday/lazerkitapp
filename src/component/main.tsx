@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Fingerprint, Shield, Zap, Code, ArrowRight, Check, Wallet, Globe, ChevronRight, Key, Database } from 'lucide-react';
 import lazerkitLogo from '../assets/lazerkitlogo.png';

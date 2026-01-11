@@ -6,7 +6,7 @@ import { Wallet, Copy, Check, ArrowLeft, Lock, Unlock } from 'lucide-react';
 export const WalletDemo: React.FC = () => {
   const navigate = useNavigate();
   const { 
-    passkeyWallet,
+    
     isLoggedIn,
     currentUser,
     walletInfo,
